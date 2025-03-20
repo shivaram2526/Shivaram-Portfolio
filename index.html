@@ -34,39 +34,44 @@
                 <li><a href="#contact" class="text-blue-400 hover:text-blue-300 hover:underline">Contact</a></li>
             </ul>
         </nav>
-
         <!-- Header -->
-        <!-- Header -->
-<header class="mb-12 flex flex-wrap items-center justify-between gap-6" data-aos="fade-up">
-  <div class="flex items-center space-x-4">
-      <img src="https://drive.google.com/thumbnail?id=13KbgWfN2KHh3DUvyAznhOQwWHZGvu8E4&sz=w300" 
-           alt="Shivaram Mamidi" 
-           class="w-16 h-16 rounded-full hover:scale-110 transition transform duration-200" 
-           loading="lazy">
-      <h1 class="text-3xl font-bold">Shivaram Mamidi - Data Engineer</h1>
-  </div>
-  <a href="#contact" aria-label="Contact Shivaram Mamidi" 
-     class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:shadow-lg hover:scale-105 transition transform duration-200">
-     Contact Me
-  </a>
-</header>
-
-        <!-- <header class="mb-12 flex flex-wrap items-center justify-between gap-6" data-aos="fade-up">
+        <header class="mb-12 flex flex-wrap items-center justify-between gap-6" data-aos="fade-up">
           <div class="flex items-center space-x-4">
-              <div class="w-28 h-28 border-4 border-blue-500 rounded-lg flex items-center justify-center bg-gray-800 shadow-lg">
-                  <img src="https://drive.google.com/thumbnail?id=13KbgWfN2KHh3DUvyAznhOQwWHZGvu8E4&sz=w500" 
-                       alt="Shivaram Mamidi" 
-                       class="w-16 h-16 rounded-full hover:scale-110 transition transform duration-200" 
-                       loading="lazy">
-              </div>
-              <h1 class="text-4xl font-bold">Shivaram Mamidi - Data Engineer</h1>
+              <img src="https://drive.google.com/thumbnail?id=13KbgWfN2KHh3DUvyAznhOQwWHZGvu8E4&sz=w300" 
+                  alt="Shivaram Mamidi" 
+                  class="w-16 h-16 rounded-full hover:scale-110 transition transform duration-200" 
+                  loading="lazy">
+              <h1 class="text-3xl font-bold">Shivaram Mamidi - Data Engineer</h1>
           </div>
           <a href="#contact" aria-label="Contact Shivaram Mamidi" 
-             class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:shadow-lg hover:scale-105 transition transform duration-200">
-             Contact Me
+            class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:shadow-lg hover:scale-105 transition transform duration-200">
+            Contact Me
           </a>
-      </header> -->
-      
+        </header>    
+
+        <!-- Introduction Section -->
+        <section class="mb-12" id="introduction" data-aos="fade-up">
+          <div class="bg-gray-800 p-6 rounded-lg">
+              <h2 class="text-2xl font-semibold mb-4">Hello, I'm Shivaram Mamidi 👋</h2>
+              <p class="text-gray-400 mb-4">
+                  I'm a passionate <span class="text-blue-400">Data Engineer</span> with a knack for turning raw data into actionable insights. 
+                  With over 2 years of experience in designing and optimizing data pipelines, I thrive on solving complex data challenges 
+                  and building scalable solutions that drive business growth.
+              </p>
+              <p class="text-gray-400 mb-4">
+                  My journey in data engineering began with a curiosity for how data shapes decision-making. Since then, I've worked with 
+                  cutting-edge technologies like <span class="text-blue-400">Azure Data Factory</span>, <span class="text-blue-400">Snowflake</span>, 
+                  and <span class="text-blue-400">AWS</span> to streamline ETL workflows, automate data processing, and deliver real-time analytics.
+              </p>
+              <p class="text-gray-400 mb-4">
+                  When I'm not coding or optimizing databases, you can find me exploring the latest trends in data engineering, contributing to 
+                  open-source projects, or enjoying a cup of coffee while brainstorming new ideas.
+              </p>
+              <p class="text-gray-400">
+                  Let's connect and build something amazing together!
+              </p>
+          </div>
+        </section>
 
         <!-- About Me Section -->
         <section class="mb-12" id="about" data-aos="fade-up">
@@ -175,8 +180,10 @@
                         <h3 class="text-xl font-bold">United Way Worldwide (UWW)</h3>
                         <p class="text-gray-400 mt-2">NGO focused on economic mobility with data integration for analytics.</p>
                         <ul class="text-gray-400 mt-2 list-disc list-inside">
-                            <li>Designed Snowflake data models for financial and census data.</li>
+                            <li>Designed Snowflake data models for MyFreeTaxes, bls, Financial and Census data.</li>
                             <li>Developed automated real-time data processing pipelines.</li>
+                            <li>Flattened different types of data (csv, xml, Json..etc) in snowflake and designed a fact and dim tables.</li>
+                            <li>Streamlined the extraction and loading in a scheduled interval of time.</li>
                             <li>Created Power BI dashboards for business insights.</li>
                         </ul>
                     </div>
@@ -188,6 +195,8 @@
                         <p class="text-gray-400 mt-2">Real-time data streaming from Azure to Snowflake via Kafka.</p>
                         <ul class="text-gray-400 mt-2 list-disc list-inside">
                             <li>Implemented Snowpipe Streaming for live data ingestion.</li>
+                            <li>Loaded data from Azure to Snowflake via Kafka (Snowpipe Streaming) for live data streaming.</li>
+                            <li>Leveraged the power of Dynamic tables and snowpipe streaming for Real time data extraction.</li>
                             <li>Developed real-time transformation logic in Snowflake.</li>
                             <li>Built dynamic Power BI dashboards for monitoring.</li>
                         </ul>
@@ -196,12 +205,11 @@
                 <!-- Project 3: Credit Card Analysis -->
                 <div class="bg-gray-800 p-6 rounded-lg flex flex-col justify-between hover:shadow-xl hover:scale-105 transition transform duration-200">
                     <div>
-                        <h3 class="text-xl font-bold">Credit Card Analysis</h3>
-                        <p class="text-gray-400 mt-2">Analyzed credit card transaction data to detect fraud and optimize customer segmentation.</p>
+                        <h3 class="text-xl font-bold">Credit Card Spending Analysis</h3>
+                        <p class="text-gray-400 mt-2">Analyzed credit card transaction data to determine the customer segmentation.</p>
                         <ul class="text-gray-400 mt-2 list-disc list-inside">
-                            <li>Built a fraud detection model using Python and scikit-learn with 95% accuracy.</li>
-                            <li>Segmented customers using clustering algorithms to improve marketing strategies.</li>
-                            <li>Visualized insights with interactive dashboards in Power BI.</li>
+                            <li>Created an end-to-end data pipeline for analyzing credit card spending, incorporating data ingestion, visualization and creating interactive dashboards. </li>
+                            <li>Received files from ADLS Gen 2, used ADF to migrate data to snowflake, performed transformations, automated the process and connected to Power Bi to provide detailed financial insights. </li>
                         </ul>
                     </div>
                 </div>
@@ -216,6 +224,23 @@
                 <li>Database Programming SQL</li>
             </ul>
         </section>
+
+        <!-- Closing Section -->
+        <section class="mt-12" id="closing" data-aos="fade-up">
+          <div class="bg-gray-800 p-8 rounded-lg text-center">
+              <h2 class="text-2xl font-semibold mb-4">Let's Build the Future Together 🚀</h2>
+              <p class="text-gray-400 mb-6">
+                  Data is the backbone of innovation, and I'm passionate about leveraging it to solve real-world problems. 
+                  Whether it's building scalable data pipelines, optimizing ETL workflows, or creating insightful dashboards, 
+                  I'm always excited to take on new challenges and collaborate with like-minded professionals.
+              </p>
+              <p class="text-gray-400 mb-6">
+                  If you're looking for a dedicated Data Engineer to join your team or have a project in mind, 
+                  I'd love to hear from you! Let's connect and turn your data into actionable insights.
+              </p>
+          </div>
+        </section>
+
         <!-- Contact Section -->
         <footer class="text-center mt-12 py-6" id="contact" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-4">Contact</h2>
